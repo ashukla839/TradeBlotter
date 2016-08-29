@@ -13,5 +13,6 @@ public interface TradeBlotterLocal {
 
 	public List<User> addUser(String name);
 	public List<TradeInfo> displayTradeInformation();
+	public boolean checkCredentials(String userId, String password);
 	
 }

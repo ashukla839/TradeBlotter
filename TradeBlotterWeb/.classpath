@@ -17,5 +17,8 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/TradeBlotterEJB"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/TradeBlotterEJBClient"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/TradeBlotterJPA"/>
+	<classpathentry kind="lib" path="C:/Grad software 2016/Java Tools/wildfly-10.0.0.Final/wildfly-10.0.0.Final/modules/system/layers/base/javax/persistence/api/main/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Grad software 2016/Java Tools/wildfly-10.0.0.Final/wildfly-10.0.0.Final/modules/system/layers/base/javax/ws/rs/api/main/jboss-jaxrs-api_2.0_spec-1.0.0.Final.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

@@ -3,11 +3,7 @@ package tradeBlotter.jpa;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 	@Entity
@@ -16,30 +12,21 @@ import javax.persistence.Table;
 		
 	    private static final long serialVersionUID = 1L;
 	    
-		private String userName;
-		
-		private int userID=-1;
-		
-		
-		
-		
-		public String getUserName() {
-			return userName;
+	    @Id
+		private String traderId;
+	    
+		private String password;
+		public String getTraderId() {
+			return traderId;
 		}
-		public void setUserName(String userName) {
-			this.userName = userName;
+		public void setTraderId(String traderId) {
+			this.traderId = traderId;
+		}
+		public String getPassword() {
+			return password;
+		}
+		public void setPassword(String password) {
+			this.password = password;
 		}
 		
-		
-		@Id
-		@GeneratedValue(strategy = GenerationType.IDENTITY)
-		public int getUserID() {
-			return userID;
-		}
-		public void setUserID(int userID) {
-			this.userID = userID;
-		}
-
-	  
-
 	}

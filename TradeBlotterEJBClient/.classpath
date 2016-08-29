@@ -12,5 +12,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Grad130/TradeBlotter/JARS/jboss-client.jar"/>
+	<classpathentry kind="src" path="/TradeBlotterJPA"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

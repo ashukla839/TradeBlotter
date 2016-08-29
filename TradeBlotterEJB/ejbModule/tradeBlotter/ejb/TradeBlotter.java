@@ -30,7 +30,7 @@ public class TradeBlotter implements TradeBlotterRemote, TradeBlotterLocal {
     public List<User> addUser(String name) {
 
 	     User user1 = new User();
-	     user1.setUserName(name);
+	     user1.setTraderId(name);
 	     em.persist(user1);
 	     List<User> users = new ArrayList<User>();
 	     users.add(user1);
@@ -38,10 +38,7 @@ public class TradeBlotter implements TradeBlotterRemote, TradeBlotterLocal {
 	     
 		
 	    }
-    public List<TradeInfo> displayTradeInformation(){
-    	
-    	
-
+    public List <TradeInfo> displayTradeInformation(){
         TypedQuery<TradeInfo> query = em.createQuery("SELECT p FROM TradeInfo AS p", TradeInfo.class);
 
         // Execute the query, and get a collection of entities back.
@@ -53,10 +50,19 @@ public class TradeBlotter implements TradeBlotterRemote, TradeBlotterLocal {
     	
     }
     
-    
-    
-    
+    public boolean checkCredentials(String userId, String password){
+        TypedQuery<User> query = em.createQuery("SELECT password from user as p" + "where userId = p.traderId", User.class);
+        List<User> pass = query.getResultList();
+        if (password == pass.get(0).toString()) {
+        	return true;
+        }
+        else {
+        	return false;
+        }
+        	
+    }
 }
+
 
 //	    @Override
 //	    public List<Product> getAllProducts() {

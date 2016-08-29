@@ -12,5 +12,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Grad software 2016/Java Tools/wildfly-10.0.0.Final/wildfly-10.0.0.Final/modules/system/layers/base/javax/persistence/api/main/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Grad130/TradeBlotter/JARS/jboss-client.jar"/>
+	<classpathentry kind="src" path="/TradeBlotterJPA"/>
+	<classpathentry kind="src" path="/TradeBlotterEJBClient"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
